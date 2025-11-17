@@ -1,0 +1,21 @@
+[package]
+name = "auto_hyw"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tray-icon = "0.19"
+winit = "0.30"
+image = "0.25"
+rand = "0.8"
+softbuffer = "0.4"
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_LibraryLoader",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Input_KeyboardAndMouse",
+]
